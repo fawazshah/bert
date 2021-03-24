@@ -7,7 +7,7 @@ with open('output.json') as f:
 
 # data['features'] is a list of feature objects
 # Each feature object consists of:
-# - token (str)
+# - token (str) - token at this index into the string
 # - layers (list of objects)
 
 # Each layer object contains:
@@ -15,4 +15,4 @@ with open('output.json') as f:
 # - values (list of ints) - list of word embeddings at this layer
 
 
-print(len(data['features'][5]['layers'][3]['values']))
+print(len(data['features'][0]['layers'][-1]['values']))
